@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\client",
+    "\\server",
+    "\\server\\src"
   ],
+  "SelectedNode": "\\server\\.eslintrc.js",
   "PreviewInSolutionExplorer": false
 }
