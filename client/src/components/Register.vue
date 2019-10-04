@@ -12,11 +12,7 @@
            v-model="password"
            placeholder="password" />
     <br>
-    <button
-            @click="register">
-            Register</button>
-    
-  </div>
+    <button @click="register">Register</button></div>
 </template>
 
 <script>
@@ -28,15 +24,15 @@ export default {
       password: ''
     }
   },
-    methods: {
-      async register() {
-       const response = await AuthenticationService.register({
-          email: this.email,
-          password: this.password
-       })
-        console.log(response.data)
-      }
+  methods: {
+    async register () {
+      const response = await AuthenticationService.register({
+        email: this.email,
+        password: this.password
+      })
+      console.log(response.data)
     }
+  }
 }
 </script>
 
